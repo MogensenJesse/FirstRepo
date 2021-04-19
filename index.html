@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do app Jesse Mogensen</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="maindiv">
+      <h1>To do list</h1>
+      <label class="addToDo">Add a to do</label>
+      <form onSubmit="formSubmit(event)">
+        <input type="text" id="taskInput" />
+        <button type="submit" id="submitBtn" class="mainButton">
+          <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.60558 14.60693"><g data-name="Layer 2"><path style="fill:#FFF;" d="M14.31366 8.01056L8.01074 14.314a.99989.99989 0 01-1.41406-1.4141l4.59625-4.59668H1a1 1 0 010-2h10.19287L6.59668 1.707A.99989.99989 0 018.01074.293l6.30292 6.30292a1.00354 1.00354 0 010 1.41467z" data-name="Layer 1"/></g></svg>
+        </button>
+      </form>
+      <div class="openTasks">
+        <h2>Open tasks</h2>
+      </div>
+      <div class="completedTasks">
+        <h2>Completed tasks</h2>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
